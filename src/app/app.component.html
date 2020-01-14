@@ -1,0 +1,7 @@
+<hello name="{{ name }}"></hello>
+<p>
+  {{value}}
+  <input [(ngModel)]="valueFormatted" 
+  (blur)="formatear($event)"
+  (focus)="unformat()">
+</p>
